@@ -69,9 +69,9 @@ def tv5():
     print("--- Teilversuch 5 ---")
     u1 = [ 0.857, 0.697, 0.561, 0.457, 0.369, 0.301, 0.241, 0.197, 0.161, 0.129 ]
     u2 = [ 7.85, 5.73, 3.65, 2.45, 1.69, 1.17, 0.80, 0.52, 0.36, 0.24 ]
-    (slopeV1, dSlope1) = evalCapVolt(u1, 0.1, 1)
+    (slopeV1, dSlope1) = evalCapVolt(u1, 0.1, 10)
     print()
-    (slopeV2, dSlope2) = evalCapVolt(u2, 1, 10)
+    (slopeV2, dSlope2) = evalCapVolt(u2, 1, 1)
     print()
 
     slope1 = Var(slopeV1, dSlope1, "s1")
